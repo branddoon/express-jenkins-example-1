@@ -25,7 +25,7 @@ pipeline {
                     sh 'pkill -f "node app.js" || true'
                     sh 'nohup node app.js > app.log 2>&1 &'
                     sleep 60
-                    sh "curl http://localhost:${params.CUSTOM_PORT} || echo "/App is not responding!/""
+                    sh "curl http://localhost:${params.CUSTOM_PORT}" || echo "App is not responding!"
                 }
             }
         }
