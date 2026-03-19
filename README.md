@@ -1,4 +1,4 @@
-# Express Jenkins Example
+# Api in Express with Jenkins configuration
 
 A minimal Node.js/Express web application with a Jenkins CI/CD pipeline for automated build and deployment.
 
